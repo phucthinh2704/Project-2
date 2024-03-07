@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>
+          Hello <br />
+          Friends
+        </h1>
+        <p>If you have an account, login and have fun</p>
+        <a href="login.html"
+          ><span><i class="fa-solid fa-left-long"></i></span>Login</a
+        >
+      </div>
+      <div class="right">
+        <h1>Register here</h1>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <a href="#" id="register">Register</a>
+        <p>or use your account</p>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      var register = document.getElementById("register");
+      register.addEventListener("click", function () {
+        var name = document.querySelector("input[type=text]");
+        var email = document.querySelector("input[type=email]");
+        var password = document.querySelector("input[type=password]");
+
+        // console.log(name, email, password);
+        if (name.value == "" || email.value == "" || password.value == "") {
+          alert("Vui lòng nhập đầy đủ");
+          return;
+        }
+
+        var users = {
+          name: name.value,
+          email: email.value,
+          password: password.value,
+        };
+        var jsonString = JSON.stringify(users);
+        localStorage.setItem(email.value, jsonString);
+        alert("Đăng ký thành công");
+      });
+
+    </script>
+  </body>
+</html>

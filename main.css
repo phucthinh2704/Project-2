@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/CourseSuperTrial/img/Phongcanhdemo1.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 640px;
+    height: 430px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0 0 5px gray;
+}
+
+.left {
+    background-image: url(/CourseSuperTrial/img/Phongcanhdemo1.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 30px 0  0 30px;
+}
+
+.left > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+} 
+
+.left > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.left > a {
+    background-color: rgba(217, 221, 224, 0.5);
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+}
+
+.left > a > span {
+    margin-right: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 30px 30px 0;
+}
+
+.right > input {
+    border: none;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.right > h1 {
+    margin-bottom: 30px;
+}
+
+.right  > a {
+    text-decoration: none;
+    background-color: rgb(53, 201, 201);
+    padding: 8px 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+.right > input:focus {
+    outline: none;
+}
+
+.right > p {
+    margin-bottom: 20px;
+}
+
+.right > div > a{
+    margin: 0 10px;
+    color: black;
+    border: 1px solid rgb(193, 193, 193);
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+/*Login*/
+
+
+.right > .right-checkbox > a{
+    border: none;
+    text-decoration: none;
+}
+
+.right > .right-checkbox {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.left-login {
+    background-image: url(/CourseSuperTrial/img/Phongcanhdemo1.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 0 30px  30px 0;
+}
+
+.left-login > a {
+    background-color: rgba(217, 221, 224, 0.5);
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+}
+
+.left-login > h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.left-login > p {
+    margin-bottom: 30px;
+}
+
+.left-login > a > span {
+    margin-right: 7px;
+    font-size: 17px;
+}
